@@ -1,0 +1,23 @@
+{
+  "name": "meusite",
+  "version": "1.0.0",
+  "description": "Criando meu primeiro site utilizando HTML e PHP no Apache2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucaspereirasouza/meusite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucaspereirasouza/meusite/issues"
+  },
+  "homepage": "https://github.com/lucaspereirasouza/meusite#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
