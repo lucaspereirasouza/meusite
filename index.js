@@ -1,13 +1,11 @@
-// Criando as variáveis do Express e App do Node.JS
-var express = require ('express'); 
-var app = express();
+const boldText = document.getElementById("changeableText");
 
-// Mensagem que será mostrada no browser (navegador) 
-app.get('/', function (req, res) {
-	res.send('Robson Vaamonde #BoraParaPrática!!!');
-});
+const insults = ["retardados", "baianos", "vagabundos", "donos de bar"];
 
-// Porta padrão utilizada pela aplicação do Node.JS
-app.listen(3000, function() {
-	console.log('Aplicativo de exemplo ouvindo na porta 3000');
-});
+function getInsult() {
+  return insults[Math.floor(Math.random() * insults.length)];
+}
+
+setInterval(() => {
+  boldText.innerText = getInsult();
+}, 2000);
